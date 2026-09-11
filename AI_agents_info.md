@@ -225,3 +225,13 @@ No failing covered tests. Existing Vite chunk-size advisory remains non-fatal. C
 **Changes:** Replaced development history, architecture, build metrics, test internals and implementation notes with a player-facing overview covering the premise, experience, controls, weapons, enemies, campaign, difficulty, settings and concise audio credit. No game code or behavior changed.
 **Files:** README.md, AI_agents_info.md.
 **Validation:** Reviewed the Markdown structure and retained accurate current product behavior. Tests were not rerun because this documentation-only change cannot affect runtime behavior.
+
+---
+
+## Change Entry #011
+**Date:** 2026-09-11
+**AI Model / Environment:** GPT-5 / Codex on Windows; no sub-agents
+**Task:** Use the supplied TIME//LOCK logo as the browser icon.
+**Changes:** Created a favicon-focused crop containing the clock/keyhole emblem, red hand and motion streaks while removing the unreadable wordmark. Saved a 256×256 optimized PNG and linked it in the document head. No game UI or behavior changed.
+**Files:** Added public/favicon.png; modified index.html and AI_agents_info.md.
+**Validation:** Production build passed and included dist/favicon.png. Generated image was visually inspected before integration.
