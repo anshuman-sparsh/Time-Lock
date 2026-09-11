@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#080f18"><title>TIME//LOCK — Temporal Laboratory</title></head><body>
+<canvas id="game" aria-label="TIME LOCK first-person test arena"></canvas>
+<div id="vignette"></div>
+<header><a class="wordmark" href="./">TIME<span>//</span>LOCK</a><div class="lab">TEMPORAL RESEARCH DIVISION <b>01 / FIRST CONTACT</b></div></header>
+<div id="crosshair"><i></i></div>
+<section id="overlay"><div class="intro"><div class="eyebrow">COMBAT SIMULATION <span>● SYSTEM ONLINE</span></div><h1 id="intro-title">FIRST CONTACT.<br><em>MAKE EVERY SECOND COUNT.</em></h1><p id="intro-description">Two hostiles. One room. Your time.</p><button id="enter">ENTER COMBAT <span>↗</span></button><p id="message" role="status">Click to capture your mouse. Escape releases it.</p><div class="controls"><span><b>W A S D</b> MOVE</span><span><b>MOUSE</b> LOOK</span><span><b>SPACE</b> JUMP</span><span><b>SHIFT</b> DASH</span><span><b>LEFT CLICK</b> FIRE</span><span><b>R</b> RELOAD</span></div></div><div class="intro-side">REAL TIME / YOUR MIND<br>SCALED TIME / YOUR WORLD</div></section>
+<div id="damage-overlay"></div><div id="hit-marker"></div>
+<div class="combat-status"><div><span class="micro">VITALS</span><strong id="hp">100</strong><small> HP</small><div class="meter"><i id="health-fill"></i></div></div><div class="ammo-panel"><span id="weapon-state" class="micro">PULSE PISTOL · R RELOAD</span><strong id="ammo">08</strong><small> / ∞</small></div></div>
+<footer><div><span class="micro">TEMPORAL STATE</span><strong id="state">LOCKED</strong><small id="scale">0.020 ×</small><div class="meter"><i id="time-fill"></i></div></div><div id="room-state" class="footer-center">FIRST CONTACT / 2 HOSTILES</div><div class="dash"><span class="micro">DIRECTIONAL DASH</span><strong id="dash">READY</strong><small>SHIFT</small></div></footer>
+<pre id="debug" hidden></pre><script type="module" src="/src/main.ts"></script></body></html>
