@@ -215,3 +215,13 @@ No failing covered tests. Existing Vite chunk-size advisory remains non-fatal. C
 **Changes:** Multiplied hostile damage for LOW, MEDIUM and HARD by exactly five, from 0.80/1.00/1.12 to 4.00/5.00/5.60. Relative difficulty ordering and all movement, projectile, aim, recovery, boss, player damage, enemy health and UI behavior remain unchanged to avoid compounding the increase or destabilizing collision/timing systems. Updated README difficulty table and added an exact-value regression assertion.
 **Files:** src/combat/difficulty.ts, tests/polish.test.ts, README.md, AI_agents_info.md.
 **Validation:** Final 40/40 test suite passed, including the exact 4.00/5.00/5.60 damage assertion. TypeScript/Vite production build passed. Chrome development campaign smoke passed progression, automatic transitions, retries, ending, audio routing and zero captured console errors. The browser test used fixture-assisted combat and a pointer-lock shim. Human balance was not evaluated.
+
+---
+
+## Change Entry #010
+**Date:** 2026-09-11
+**AI Model / Environment:** GPT-5 / Codex on Windows; no sub-agents
+**Task:** Rewrite README around the product without technical information.
+**Changes:** Replaced development history, architecture, build metrics, test internals and implementation notes with a player-facing overview covering the premise, experience, controls, weapons, enemies, campaign, difficulty, settings and concise audio credit. No game code or behavior changed.
+**Files:** README.md, AI_agents_info.md.
+**Validation:** Reviewed the Markdown structure and retained accurate current product behavior. Tests were not rerun because this documentation-only change cannot affect runtime behavior.
